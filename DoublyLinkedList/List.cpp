@@ -83,3 +83,14 @@ void List::deleteFromPosition(int position)
         sizeList--;
     }
 }
+
+void List::printList()
+{
+    Node* temp = head;
+    for (int i=0;i<sizeList;i++)
+    {
+        cout<< temp -> data<<endl;
+        temp = temp -> next;
+    }
+
+}

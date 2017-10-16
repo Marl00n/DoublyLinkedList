@@ -24,7 +24,6 @@ private:
         Node * previous;
         
         Node():data(0), next(nullptr), previous(nullptr) {};
-        Node (const int& d):data(d), next(nullptr), previous(nullptr) {};
     };
     
 public:
@@ -32,6 +31,7 @@ public:
     virtual ~List();
     void insertAtPosition (int value, int position);
     void deleteFromPosition (int position);
+    void printList();
     
     Node * head;
     Node * tail;
