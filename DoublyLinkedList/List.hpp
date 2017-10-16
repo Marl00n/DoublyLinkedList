@@ -29,7 +29,7 @@ private:
 public:
     List();
     virtual ~List();
-    void insertAtPosition (int value, int position);
+    void insertAtPosition (int position, int value);
     void deleteFromPosition (int position);
     void printList();
     

@@ -22,7 +22,7 @@ List::~List()
     delete this;
 }
 
-void List::insertAtPosition(int value, int position)
+void List::insertAtPosition(int position, int value)
 {
     if (position > sizeList)
     {
@@ -87,10 +87,16 @@ void List::deleteFromPosition(int position)
 void List::printList()
 {
     Node* temp = head;
-    for (int i=0;i<sizeList;i++)
+    if(sizeList==0)
     {
-        cout<< temp -> data<<endl;
-        temp = temp -> next;
+        cout<<"List is empty"<<endl;
     }
-
+    else
+    {
+        for (int i=0;i<sizeList;i++)
+        {
+            cout<< temp -> data<<endl;
+            temp = temp -> next;
+        }
+    }
 }
